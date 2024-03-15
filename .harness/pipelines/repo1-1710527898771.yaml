@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_nofarb_repo1_1710527901262
+  name: Build repo1
+  orgIdentifier: default
+  projectIdentifier: NofarUri
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.github
+        repoName: nofarb/repo1
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
