@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_nofarb_repo1_1710527901262-pr-trigger-input-set
+  identifier: Build_nofarb_repo1_1710527901262prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: NofarUri
+  pipeline:
+    identifier: Build_nofarb_repo1_1710527901262
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
