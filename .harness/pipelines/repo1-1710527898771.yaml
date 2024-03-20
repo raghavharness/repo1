@@ -22,7 +22,7 @@ pipeline:
                   name: echo
                   spec:
                     shell: Sh
-                    command: echo hello world <+pipeline.variables.var1>
+                    command: "echo my var is:  <+pipeline.variables.var1>"
                   timeout: ""
                   type: Run
           platform:
