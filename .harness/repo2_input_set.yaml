@@ -1,0 +1,18 @@
+inputSet:
+  name: repo2 input set
+  identifier: repo2_input_set
+  orgIdentifier: default
+  projectIdentifier: NofarUri
+  pipeline:
+    identifier: Build_nofarb_repo1_1710527901262
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
+    variables:
+      - name: var1
+        type: String
+        value: repo2
