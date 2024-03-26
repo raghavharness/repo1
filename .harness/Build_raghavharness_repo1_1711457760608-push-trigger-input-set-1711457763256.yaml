@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_raghavharness_repo1_1711457760608-push-trigger-input-set
+  identifier: Build_raghavharness_repo1_1711457760608pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: RaghavTest
+  pipeline:
+    identifier: Build_raghavharness_repo1_1711457760608
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
