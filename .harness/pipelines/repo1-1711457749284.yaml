@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_raghavharness_repo1_1711457760608
+  name: Build repo1
+  orgIdentifier: default
+  projectIdentifier: RaghavTest
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.sahithiTf3
+        repoName: raghavharness/repo1
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
