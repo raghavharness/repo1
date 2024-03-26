@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_raghavharness_repo1_1711458047104-pr-trigger-input-set
+  identifier: Build_raghavharness_repo1_1711458047104prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: RaghavTest
+  pipeline:
+    identifier: Build_raghavharness_repo1_1711458047104
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
